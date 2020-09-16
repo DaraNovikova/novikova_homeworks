@@ -1,0 +1,112 @@
+.page {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 4;
+  font-family: 'Roboto', sans-serif;
+  justify-items: center;
+  width: 1360px;
+  height: 840px;
+  margin: 154px 320px 124px;
+  grid-template-areas: "title title title" "card--1 card--2 card--3" "text text text" "button-box button-box button-box"; }
+
+.card--1 {
+  grid-area: card--1; }
+
+.card--2 {
+  grid-area: card--2; }
+
+.card--3 {
+  grid-area: card--3; }
+
+.title {
+  grid-area: title;
+  font-weight: 100;
+  color: #0e1a35;
+  font-size: 60px;
+  margin-bottom: 88px; }
+
+.text {
+  grid-area: text;
+  width: 902px;
+  height: 69px;
+  color: #8492af;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin: 109px 0 0; }
+
+.card {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  font-family: 'Roboto', sans-serif;
+  width: 360px;
+  height: 422px;
+  border: 1px solid #f3f3f5;
+  box-shadow: 0px 0px 30px #f3f3f5;
+  color: #0e1a35;
+  justify-items: center;
+  align-items: center; }
+  .card .card-name {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 20px 0 20px; }
+  .card .card-price {
+    font-size: 72px;
+    font-weight: 700;
+    margin: 0 0 20px; }
+  .card span:first-child {
+    font-size: 40px;
+    font-weight: 700; }
+  .card span:last-child {
+    font-size: 24px;
+    color: #8492af;
+    font-weight: 400; }
+  .card .card-content {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 4;
+    font-family: 'Roboto', sans-serif;
+    grid-template-areas: "card-checked card-text" "card-checked card-text" "card-checked card-text" "card-checked card-text";
+    gap: 20px 15px;
+    color: #8492af;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px; }
+    .card .card-content p {
+      margin: 0px; }
+
+.button-box {
+  grid-area: button-box;
+  height: 48px;
+  width: 716px;
+  text-align: center; }
+  .button-box span {
+    position: relative; }
+    .button-box span::before {
+      display: block;
+      width: 226px;
+      margin-right: 30px;
+      margin-top: 91px;
+      content: " ";
+      position: absolute;
+      border-bottom: 1px solid #dadee7; }
+    .button-box span .button {
+      margin-top: 67px;
+      height: 48px;
+      width: 204px;
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      background-color: #5584ff; }
+    .button-box span::after {
+      display: block;
+      width: 226px;
+      margin-left: 490px;
+      margin-top: -24px;
+      content: " ";
+      position: absolute;
+      border-bottom: 1px solid #dadee7; }

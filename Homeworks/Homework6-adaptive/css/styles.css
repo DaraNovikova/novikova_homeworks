@@ -1,0 +1,172 @@
+body{
+    background-color: white;
+}
+
+.title {
+    width: 730px;
+    margin: 140px 165px 80px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.title h1 {
+    line-height: 48px;
+    margin-bottom: 16px;
+    font-size: 36px;
+    color: #091133;
+}
+
+.title p {
+    height: 52px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6F7CB2;
+
+}
+
+.box{
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin: 0 165px 144px;
+}
+
+
+.container h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    color: #37447E;
+    margin-bottom: 16px;
+}
+
+.container h3{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    color: #091133;
+    margin-bottom: 8px;
+}
+
+.container p {
+    width: 350px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #5D6970;
+}
+
+.button{
+    margin-top: 30px;
+    border: none;
+    background-color: #111B47;
+    border-radius: 2px;
+    height: 26px;
+    width: 189px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+@media only screen and (max-width:1280px){
+    .title {
+        width: 720px;
+        margin: 60px 50px 0px;
+    }
+
+    .box{
+        margin-right: 10px;
+    }
+
+    .container{
+        width: 720px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 50px 40px;
+    }
+
+    .container p {
+        width: 350px;
+    }
+
+    #number_3 {
+        margin-top: 20px;
+    }
+    
+    .button{
+        margin-top: 15px;
+        height: 22px;
+        width: 179px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .title {
+        width: 250px;
+    }
+    
+    .title h1 {
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    .title p {
+        text-align: justify;
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .box{
+        width: 200px;
+        margin: 10px 20px 0;
+    }
+
+    .container{
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+        margin: 0px 20px 30px; 
+        padding: 20px;
+    } 
+
+    .container h2{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+    
+    .container h3{
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+    
+    .container p {
+        text-align: justify;
+        width: 200px;
+        font-size: 11px;
+        line-height: 20px;
+
+    }
+
+    .button{
+        height: 22px;
+        width: 150px;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+}
+
+

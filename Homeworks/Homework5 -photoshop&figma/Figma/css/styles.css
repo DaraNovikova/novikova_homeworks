@@ -1,0 +1,107 @@
+body {
+    background-color: #f6f7fa;
+}
+
+main {
+    width: 1440px;
+    height: 1276px;
+}
+
+main .section:nth-child(even) {
+    display: inline-block;
+    background-image: url(../img/Light_theme/Background.jpg);
+    color: #B65741;
+}
+
+main .section:nth-child(odd) {
+    display: inline-block;
+    background-image: url(../img/Dark_theme/Background.jpg);
+    color: #FFFFFF;
+}
+
+.section {
+    width: 660px;
+    height: 184px;
+    border-radius: 16px;
+    margin: 20px 24px 64px 15px;
+}
+
+.section__content {
+    float: left;
+    width: 263px;
+    height: 77px;
+    margin: 72px 0 35px 40px;
+}
+
+p {
+    font-family: "Open Sans";
+    font-style: normal;
+    margin: 0;
+}
+
+.text{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.time{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+img{
+    float: left;
+}
+
+.light_img_card1{
+    margin-left: 58px;
+    margin-top: 15px;
+}
+
+.dark_img_card1{
+    margin-left: 74px;
+    margin-top: 16.61px;
+}
+
+.light_img_card2{
+    margin-left: 51px;
+    margin-top: -3px;
+}
+
+.dark_img_card2{
+    margin-left: 72px;
+    margin-top: -20px;
+}
+
+.light_img_card3{
+    margin-left: 65px;
+    margin-top: -3px;
+}
+
+.dark_img_card3{
+    margin-left: 83px;
+    margin-top: -8px;
+}
+
+.light_img_card4 {
+    margin-left: 69px;
+    margin-top: -12px;
+}
+
+.dark_img_card4 {
+    margin-left: 78px;
+    margin-top: -12px;
+}
+
+.light_img_card5{
+    margin-left: 35px;
+    margin-top: -24px;
+}
+
+.dark_img_card5{
+    margin-left: 51px;
+    margin-top: -28px;
+}
+

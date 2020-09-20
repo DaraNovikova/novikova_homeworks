@@ -1,0 +1,106 @@
+.string {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.string::before{
+    content: "'";
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    color: red;
+
+}
+
+.string::after{
+    content: "'";
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    color: red;
+
+}
+
+p:last-of-type{
+    font-family: Arial;
+    font-size: large;
+    font-weight: bold;
+}
+
+ul:first-of-type {
+    font-family: Arial;
+    font-weight: normal;
+    font-size: small;
+}
+
+ul:first-of-type li:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+ul:first-of-type li:last-child {
+    color: green;
+    font-style: italic;
+}
+
+ul:last-of-type{
+    width: 350px;
+}
+
+ul:last-of-type li {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    height: 30px;
+    width: 100px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    background-color: rgba(211,211, 211, 0.3);
+    text-align: center;
+    line-height: 30px;
+
+}
+
+ul:last-of-type li:nth-child(3), ul:last-of-type li:nth-child(7){
+    background-color: rgb(124, 250, 0, 0.3);
+    border: 1px solid rgba(0, 128, 0, 0.3);
+}
+
+.page{
+    width: 400px;
+    height: 400px;
+}
+
+header {
+    background-color: rgba(0, 128, 0, 0.2);
+    height: 70px;
+}
+
+nav {
+    background-color: rgba(0, 128, 0, 0.5);
+    height: 50px;
+}
+
+#sidebar {
+    height: 230px;
+    width: 100px;
+    background-color: rgba(0, 0, 255, 0.7);
+    float: left;
+
+}
+
+#content {
+    height: 230px;
+    width: 200px;
+    background-color: lightblue;
+    float: left;
+}
+aside {
+    height: 230px;
+    width: 100px;
+    background-color: rgba(0, 0, 255, 0.7);
+    float: left;
+}
+
+footer {
+    background-color: rgba(0, 128, 0, 0.2);
+    height: 50px;
+    clear: both;
+}

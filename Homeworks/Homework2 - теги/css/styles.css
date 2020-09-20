@@ -1,0 +1,71 @@
+/* styles for browser table */
+
+.browser_table {
+    width: 300px;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+.browser_table th {
+    height: 30px;
+    border: 2px solid black;
+}
+.browser_table td {
+    border: 1px solid gray;
+}
+
+/* styles for form table */
+
+.form_table, .form_table td {
+    border: 1px solid grey;
+}
+.form_table th {
+    background-color:#ccccff;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+}
+#user_name {
+    border: 1px solid lightgray;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    width: 165px;
+}
+.td_height {
+    height: 20px;
+}
+
+#athletic_ability{
+    border: 1px solid lightgray;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    vertical-align: bottom;
+}
+
+#button_align {
+    text-align: center;
+}
+
+/* styles for fruit survey */
+
+.fruit_survey td {
+    width: 170px;
+}
+.align_td{
+    text-align: right;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.form_fruit {
+    text-align: center;
+    line-height: 28px;
+}
+.form_fruit_div {
+    width: 620px;
+    height: 440px;
+    background-color: #ffff99;
+
+}
+#header_form_fruit{
+    background-color: #ffcc00;
+}
+

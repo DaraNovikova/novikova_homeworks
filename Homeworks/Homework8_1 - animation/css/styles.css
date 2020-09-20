@@ -1,0 +1,49 @@
+
+.box{
+    position: relative;
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+    border: 1px solid ;
+    box-shadow: 0 0 5px 5px grey;
+}
+
+.square {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    background-color: darkblue;
+    animation-name: rotating_square;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotating_square {
+
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+
+}
+
+.rectangle{
+    width: 300px;
+    height: 200px;
+    border: 1px solid grey;
+    margin: 20px;
+    background: linear-gradient(to top right,  yellow, blue);
+    border: 1px solid blue;
+    box-shadow: -5px 5px 5px grey;
+}
+
+.rectangle:hover{
+    transform: rotate(-45deg);
+    transform-origin: top center;
+}

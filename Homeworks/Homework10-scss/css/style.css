@@ -1,0 +1,210 @@
+.page {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 4;
+  font-family: 'Roboto', sans-serif;
+  justify-items: center;
+  width: 1360px;
+  height: 840px;
+  margin: 100px 150px 124px;
+  grid-template-areas: "title title title" "card--1 card--2 card--3" "text text text" "button-box button-box button-box"; }
+
+.card--1 {
+  grid-area: card--1; }
+
+.card--2 {
+  grid-area: card--2; }
+
+.card--3 {
+  grid-area: card--3; }
+
+.title {
+  grid-area: title;
+  font-weight: 100;
+  color: #0e1a35;
+  font-size: 60px;
+  margin-bottom: 88px; }
+
+.text {
+  grid-area: text;
+  width: 902px;
+  height: 69px;
+  color: #8492af;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin: 109px 0 0; }
+
+.card {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+  font-family: 'Roboto', sans-serif;
+  width: 360px;
+  height: 422px;
+  border: 1px solid #f3f3f5;
+  box-shadow: 0px 0px 30px #f3f3f5;
+  color: #0e1a35;
+  justify-items: center;
+  align-items: center; }
+  .card .card-name {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 20px 0 20px; }
+  .card .card-price {
+    font-size: 72px;
+    font-weight: 700;
+    margin: 0 0 20px; }
+  .card span:first-child {
+    font-size: 40px;
+    font-weight: 700; }
+  .card span:last-child {
+    font-size: 24px;
+    color: #8492af;
+    font-weight: 400; }
+  .card .card-content {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 4;
+    font-family: 'Roboto', sans-serif;
+    grid-template-areas: "card-checked card-text" "card-checked card-text" "card-checked card-text" "card-checked card-text";
+    gap: 20px 15px;
+    color: #8492af;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px; }
+    .card .card-content p {
+      margin: 0px; }
+
+.button-box {
+  grid-area: button-box;
+  height: 48px;
+  width: 716px;
+  text-align: center; }
+  .button-box span {
+    position: relative; }
+    .button-box span::before {
+      display: block;
+      width: 226px;
+      margin-right: 30px;
+      margin-top: 91px;
+      content: " ";
+      position: absolute;
+      border-bottom: 1px solid #dadee7; }
+    .button-box span .button {
+      margin-top: 67px;
+      height: 48px;
+      width: 204px;
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      background-color: #5584ff; }
+    .button-box span::after {
+      display: block;
+      width: 226px;
+      margin-left: 490px;
+      margin-top: -24px;
+      content: " ";
+      position: absolute;
+      border-bottom: 1px solid #dadee7; }
+
+@media only screen and (max-width: 1480px) {
+  .page {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 5;
+    font-family: 'Roboto', sans-serif;
+    width: 700px;
+    height: 1300px;
+    margin: 50px 30px 142px;
+    grid-template-areas: "title title" "card--1 card--2" "card--3 card--3" "text text" "button-box button-box"; }
+
+  .title {
+    margin-bottom: 60px; }
+
+  .card {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    font-family: 'Roboto', sans-serif;
+    width: 330px; }
+
+  .card--3 {
+    margin-top: 10px; }
+
+  .text {
+    width: 700px;
+    text-align: justify;
+    margin-top: 30px;
+    line-height: 22px; }
+
+  .button-box {
+    width: 700px; }
+    .button-box span::before {
+      width: 200px; }
+    .button-box span .button {
+      width: 204px; }
+    .button-box span::after {
+      width: 200px; } }
+@media only screen and (max-width: 768px) {
+  .page {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 6;
+    font-family: 'Roboto', sans-serif;
+    width: 250px;
+    height: 1400px;
+    margin: 30px 10px 40px;
+    grid-template-areas: "title" "card--1" "card--2" "card--3" "text" "button-box"; }
+
+  .title {
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-align: center; }
+
+  .card {
+    width: 220px;
+    height: 282px;
+    margin-top: 10px; }
+    .card .card-name {
+      font-size: 16px; }
+    .card .card-price {
+      font-size: 36px;
+      margin: 0 0 10px; }
+    .card span:first-child {
+      font-size: 25px; }
+    .card span:last-child {
+      font-size: 16px; }
+    .card .card-content {
+      gap: 10px 0px;
+      font-size: 12px; }
+
+  .card-checked {
+    max-width: 70%; }
+
+  .text {
+    width: 250px;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 17px; }
+
+  .button-box {
+    height: 28px;
+    width: 250px; }
+    .button-box span::before {
+      width: 70px;
+      margin-top: 44px; }
+    .button-box span .button {
+      width: 100px;
+      height: 28px;
+      margin-top: 30px;
+      margin-left: 20px;
+      font-size: 12px; }
+    .button-box span::after {
+      width: 70px;
+      margin-left: 200px;
+      margin-top: -14px; } }

@@ -1,0 +1,275 @@
+@mixin grid-align ($col, $row) {
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page {
+    @include grid-align(3,4);
+    justify-items: center;
+    width: 1360px;
+    height: 840px;
+    margin: 100px 150px 124px;
+    grid-template-areas: 
+    "title title title"
+    "card--1 card--2 card--3"
+    "text text text"
+    "button-box button-box button-box";
+}
+
+@each $class-name in 'card--1' 'card--2' 'card--3' {
+    .#{$class-name}{
+        grid-area: #{$class-name};
+    }
+    
+}
+
+.title{
+    grid-area: title;
+    font-weight: 100;
+    color: #0e1a35;
+    font-size: 60px;
+    margin-bottom: 88px;
+}
+
+.text{
+    grid-area: text;
+    width: 902px;
+    height: 69px;
+    color: #8492af;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin: 109px 0 0;
+
+}
+
+.card{
+    @include grid-align(1, 3);
+    width: 360px;
+    height: 422px;
+    border: 1px solid #f3f3f5;
+    box-shadow: 0px 0px 30px #f3f3f5;
+    color: #0e1a35;
+    justify-items: center;
+    align-items: center;
+    .card-name{
+        font-size: 24px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin: 20px 0 20px;
+    }
+    .card-price{
+        font-size: 72px; 
+        font-weight: 700;
+        margin: 0 0 20px;
+    }
+        span:first-child{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        span:last-child {
+            font-size: 24px;
+            color: #8492af;
+            font-weight: 400;
+        }
+    .card-content {
+        @include grid-align(2,4);
+        grid-template-areas: 
+        "card-checked card-text"
+        "card-checked card-text"
+        "card-checked card-text"
+        "card-checked card-text";
+        gap: 20px 15px;
+        color: #8492af;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 20px;
+            p{
+                margin: 0px;
+            }
+    }
+}
+
+
+.button-box{
+    grid-area: button-box;
+    height: 48px;
+    width: 716px;
+    text-align: center;
+    span {
+        position: relative;
+            &::before{
+                display: block;
+                width: 226px;
+                margin-right: 30px;
+                margin-top: 91px;
+                content: " ";
+                position: absolute;
+                border-bottom: 1px solid #dadee7;
+            }
+            .button {
+                margin-top: 67px;
+                height: 48px;
+                width: 204px;
+                border: none;
+                border-radius: 50px;
+                color: white;
+                font-size: 18px;
+                font-weight: 700;
+                background-color: #5584ff;        
+            }
+
+            &::after{
+                display: block;
+                width: 226px;
+                margin-left: 490px;
+                margin-top: -24px;
+                content: " ";
+                position: absolute;
+                border-bottom: 1px solid #dadee7;
+            }
+    }
+
+
+}
+
+@media only screen and (max-width:1480px){
+    .page {
+        @include grid-align(2,5);
+        width: 700px;
+        height: 1300px;
+        margin: 50px 30px 142px;
+        grid-template-areas: 
+        "title title"
+        "card--1 card--2"
+        "card--3 card--3"
+        "text text"
+        "button-box button-box";
+    }
+
+    .title {
+        margin-bottom: 60px;
+    }
+
+    .card{
+        @include grid-align(2, 2);
+        width: 330px;
+    }
+
+    .card--3 {
+        margin-top: 10px;
+    }
+
+    .text {
+        width: 700px;
+        text-align: justify;
+        margin-top: 30px;
+        line-height: 22px;
+    }
+
+    .button-box{
+        width: 700px;
+        span {
+            &::before{
+                width: 200px;
+            }
+            
+            .button {
+                width: 204px;    
+            }
+
+            &::after{
+                width: 200px;
+
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width:768px){
+    .page {
+        @include grid-align(1,6);
+        width: 250px;
+        height: 1400px;
+        margin: 30px 10px 40px;
+        grid-template-areas: 
+        "title"
+        "card--1"
+        "card--2"
+        "card--3"
+        "text"
+        "button-box";
+    }
+
+    .title {
+        margin-bottom: 10px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .card{
+        width: 220px;
+        height: 282px;
+        margin-top: 10px;
+
+        .card-name{
+            font-size: 16px;
+        }
+        .card-price{
+            font-size: 36px; 
+            margin: 0 0 10px;
+        }
+            span:first-child{
+                font-size: 25px;
+            }
+            span:last-child {
+                font-size: 16px;
+            }
+        .card-content {
+            gap: 10px 0px;
+            font-size: 12px;
+        }    
+    }
+
+    .card-checked {
+        max-width: 70%;
+    }
+    .text {
+        width: 250px;
+        text-align: justify;
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .button-box{
+        height: 28px;
+        width: 250px;
+        span {
+            &::before{
+                width: 70px;
+                margin-top: 44px;
+            }
+            
+            .button {
+                width: 100px;
+                height: 28px;
+                margin-top: 30px;
+                margin-left: 20px;
+                font-size: 12px;    
+            }
+
+            &::after{
+                width: 70px;
+                margin-left: 200px;
+                margin-top: -14px;
+
+            }
+        }
+    }
+    
+}

@@ -4,25 +4,34 @@ console.log(arr);
 
 arr = [];
 
-function randomNumber (number){
+
+function getRandomNumber (max, min) { 
+    if ( min => 0 && max > 0){
+        return Math.floor(Math.random() * (max - min + 1) ) + min;
+    };
+};
+
+arr = [];
+
+function setRandomNumber (number) {
     for (let arrElement = 0; arrElement < number; arrElement++) {
-       arr.push(Math.floor (Math.random () * 101));
+       arr.push(getRandomNumber(100, 0));
     };
 
     return arr;
-}
-console.log(randomNumber(10));
-
-function checkNumber (userNumber){
-    for (let item of arr) {
-        console.log((item == userNumber)? `Number ${userNumber} is in list.`:`Number ${userNumber} is not in list.`);
-        item+=1;
-    }
-
 };
 
-console.log(checkNumber(prompt("Input your number", 0)));
+console.log(setRandomNumber(10));
 
+let userInput = prompt("Input your number", 0);
+userInput = parseInt(userInput);
+let result = arr.indexOf(userInput);
+
+if (result != -1){
+    console.log(`Number ${userInput} is in the list.`)
+}else {
+    console.log(`Number ${userInput} is not in the list.`)
+};
 
 
 function longestWord(string) {
@@ -38,7 +47,6 @@ function longestWord(string) {
     return word;
 }
 console.log(longestWord("Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsam?"));
-
 
 
 arr = [8, 6, 12, 10];
